@@ -9,10 +9,10 @@
 - **Email:** info@informaat.nl
 
 ### Achtergrondgegevens
-De opdracht is voor het ontwerpbureau **Informaat**. Informaat ontwerpt/bouwt websites en richt zich vooral op grotere klanten.
+De opdracht is voor het ontwerpbureau **Informaat**. Informaat ontwerpt/bouwt websites en richt zich vooral op grotere klanten. 
 
 ## Aanleiding
-Informaat wilt graag nieuwe klanten en prospects trekken, die bij hun een website laten maken. Dit willen ze doen doormiddel van een nieuwe landingspagina.
+Informaat wilt graag nieuwe klanten en prospects trekken, die bij hun een website laten maken. Dit willen ze doen doormiddel van een nieuwe landingspagina. De content van deze pagina moet op mobiel formaat een beter hierarchie hebben. 
 ## Doelstelling
 Dit project heeft als doel het bestaande ontwerp van de Informaat landingspagina te bouwen. De focus ligt op het aantrekken van grotere klanten door een overtuigende waardepropositie te bieden. De landingspagina moet potentiële klanten aantrekken en activeren een website bij Informaat te laten maken.
 ## Oplevering
