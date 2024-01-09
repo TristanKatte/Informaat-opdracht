@@ -29,7 +29,7 @@ Op **25-01-2024** wordt de landingspagina opgeleverd.
     - Richt je op grotere klanten. Begrijp hun behoeften voor een effectieve landingspagina.
 
 - **Een pagina:**
-    - Het design bestaat uit een pagina hier moet niet van afgeweken worden.
+    - Het design bestaat uit een one-pager, hier moet niet van afgeweken worden.
 
 - **Functionaliteiten:**
     - **Slider (Optioneel):** Overweeg een slider als de afbeeldingen afgezaagd worden bij een kleinere view.
