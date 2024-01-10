@@ -1,0 +1,16 @@
+:root {
+  /* kleuren */
+  --text-color: #222222;
+  --section-color: #abcdd9;
+  --section-color-2: #d3e5eb;
+
+  /* typografie */
+  --font-family: "Gilroy", sans-serif;
+  --font-size-h1: 5em;
+  --font-size-h2: 2em;
+  --body-text: 1em;
+  --button-text: 1.1em;
+
+  /* marges en witruimtes */
+  
+}
