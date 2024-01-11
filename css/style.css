@@ -12,5 +12,13 @@
   --button-text: 1.1em;
 
   /* marges en witruimtes */
-  
+  --padding-section: 1em;
+  --margin-spacing: 1.2em;
+}
+
+@media only screen and (min-width: 30em) {
+  body {
+    margin: 0; 
+    padding: 0;
+  }
 }
