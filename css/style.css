@@ -26,9 +26,22 @@
 
   header {
     background-color: var(--section-color);
+    background-image: url(../assets/Header\ image\ -\ Exp3.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: var(--padding-section);
   }
 
-  section:nth-of-type(odd) {
-    background-color: brown;
+  section:nth-of-type(1) {
+    background-color: #fff;
+    width: 90vw;
+    padding: var(--padding-section);
+  }
+
+  section:nth-of-type(2) {
+    background-color: var(--section-color-2);
+    width: 100vw;
+    color: #000;
+    padding: var(--padding-section);
   }
 }
