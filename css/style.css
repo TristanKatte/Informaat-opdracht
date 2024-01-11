@@ -5,7 +5,7 @@
   --section-color-2: #d3e5eb;
 
   /* typografie */
-  --font-family: "Gilroy", sans-serif;
+  --font-family-body: "Gilroy", sans-serif;
   --font-size-h1: 5em;
   --font-size-h2: 2em;
   --body-text: 1em;
@@ -16,9 +16,19 @@
   --margin-spacing: 1.2em;
 }
 
-@media only screen and (min-width: 30em) {
+@media (min-width: 25em) {
   body {
     margin: 0; 
     padding: 0;
+    font-family: "Gilroy", sans-serif;
+
+  }
+
+  header {
+    background-color: var(--section-color);
+  }
+
+  section:nth-of-type(odd) {
+    background-color: brown;
   }
 }
