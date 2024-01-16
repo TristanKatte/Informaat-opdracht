@@ -1,8 +1,19 @@
 :root {
-  /* kleuren */
-  --text-color: #222222;
-  --section-color: #abcdd9;
-  --section-color-2: #d3e5eb;
+   
+  /*text sizes*/
+   --headTitleSize: 2em;
+   --titleSize: 1.5em;
+   --subTitleSize: 1.2em;
+   --textSize: 1em;
+   /*font properties*/
+   --textFont: 'Gilroy', sans-serif;
+   
+   /*colors*/
+   --mainColor: #ABCDDB;
+   --secundaryColor: #ffff;
+   --tertairyColor: #D7E6EC;
+   --textColor: #000000;
+
 
   /* typografie */
   --font-family-body: "Gilroy", sans-serif;
@@ -31,10 +42,43 @@
     padding: var(--padding-section);
   }
 
+  /*text properties*/
+h1 h2 h3 p {
+  font-family: var(--textFont);
+  max-width: 60ch;
+}
+
+h1, h2, h3 {
+  line-height: 1.2; /* of line-height: 1.2em; */
+  letter-spacing: 0.05em;
+}
+
+h1 {
+  font-size: var(--headTitleSize);
+  font-weight: bold;
+}
+
+h2 {
+  font-size: var(--titleSize);
+  font-weight: bold;
+}
+
+h3 {
+  font-size: var(--subTitleSize);
+  font-weight: bold;
+}
+
+p {
+  font-size: var(--textSize);
+  line-height: 1.5; /* of line-height: 1.5em; */
+  letter-spacing: 0.02em;
+}
+
   main {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    align-items: center;
+    background-color: var(--mainColor);
   }
 
   /*image settings*/
@@ -46,32 +90,40 @@ img {
   max-width: 100%;
 }
 
-  section:nth-of-type(1) {
+
+
+ .hoewedatdoen {
     display: flex;
     flex-direction: column;
-    background-color: #fff;
     width: 90vw;
     padding: var(--padding-section);
     position: relative;
   }
 
-  section:nth-of-type(1)::before {
+  .hoewedatdoentext {
+    background-color: var(--section-color-2);
+    width: 90%;
+    margin-left: auto;
+    position: relative;
+  }
+
+  .hoewedatdoentext::before {
     content: '';
     position: absolute;
     top: 0;
-    left: -6em; /* Pas de afstand van de afschuining aan in em */
+    left: -6em; 
     width: 0;
     height: 0;
     border-style: solid;
-    border-width: 0 6em 36em 0; /* Pas de grootte van de afschuining aan in em */
-    border-color: transparent var(--secundaryColor) transparent transparent;
+    border-width: 0 6em 36em 0; 
+    border-color: transparent var(--section-color-2) transparent transparent;
   }
 
-  section:nth-of-type(2) {
+  /* section:nth-of-type(2) {
     display: flex;
     flex-direction: column;
     background-color: var(--section-color-2);
-    width: 100vw;
+    width: 9cqmin;
     color: #000;
     padding: var(--padding-section);
     position: relative;
@@ -81,43 +133,17 @@ img {
     content: '';
     position: absolute;
     top: 0;
-    left: -6em; /* Pas de afstand van de afschuining aan in em */
+    left: -6em; 
     width: 0;
     height: 0;
     border-style: solid;
-    border-width: 0 6em 36em 0; /* Pas de grootte van de afschuining aan in em */
+    border-width: 0 6em 36em 0; 
     border-color: transparent var(--secundaryColor) transparent transparent;
-  }
-
-  .howDoWeDo {
-    display: flex;
-    flex-direction: column;
-
-}
-
-.howWeDoTextContainer {
-    background-color: var(--secundaryColor);
-    width: 90%;
-    margin-left: auto;
-    position: relative;
-
-}
-
-.howWeDoTextContainer::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: -6em; /* Pas de afstand van de afschuining aan in em */
-    width: 0;
-    height: 0;
-    border-style: solid;
-    border-width: 0 6em 36em 0; /* Pas de grootte van de afschuining aan in em */
-    border-color: transparent var(--secundaryColor) transparent transparent;
-}
+  } */
 
 /*second block*/
 /**/
-.customerReviews {
+.testimonials {
     background-color: var(--tertairyColor);
     display: flex;
     flex-direction: column;
@@ -126,7 +152,7 @@ img {
 
 }
 
-.customerReviewsContentContainer {
+.testimonialcontent {
     display: flex;
     flex-direction: column;
     justify-content: center; /* Voeg deze regel toe om de inhoud in het midden te centreren */
