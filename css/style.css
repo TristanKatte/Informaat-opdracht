@@ -109,6 +109,22 @@ main {
   transition: 1s;
 }
 
+.slide1 {
+  animation: arrow1 1s ease-in-out infinite;
+  margin-left: 9px;
+}
+
+@keyframes arrow1 {
+  0%,
+  100% {
+    transform: translate(0, 0);
+  }
+
+  50% {
+    transform: translate(10px, 0);
+  }
+}
+
 /*image settings*/
 header img {
   max-width: 100%;
