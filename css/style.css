@@ -98,12 +98,12 @@ main {
   width: 100vw;
 }
 
-.contact {
+.contactknop {
   border: 1px solid var(--textColor);
   padding: var(--padding-section);
 }
 
-.contact:hover {
+.contactknop:hover {
   background-color: var(--fourthcolor);
   color: var(--tertairyColor);
   transition: 1s;
@@ -443,6 +443,7 @@ display: flex;
   flex-direction: column;
   justify-content: center;
   padding: 4em;
+  
 
 }
 
@@ -450,6 +451,8 @@ form{
   display: flex;
   flex-direction: column;
   font-size: 2.5em;
+ width: 75vw;
+
 
 
 }
@@ -460,16 +463,23 @@ margin: 0.7em 0 0.7em 0;
   background-color: var(--tertairyColor);
   border: none;
   color: var(--textColor);
+  min-width: 50%;
+}
+
+input[label] 
+{
+  font-size: 0.6em;
 }
 
 input[type="checkbox"] {
 width: 0.8em;
   height: 0.8em;
   background-color: var(--tertairyColor);
+  font-size: var(--button-text);
 }
 
-form button {
-  font-size: 1em;
+form  button {
+  font-size: 0.8em;
   margin-top: 1.5em;
 }
 
