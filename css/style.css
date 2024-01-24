@@ -159,35 +159,23 @@ img {
 
 .howDoWeDo li {
     margin-left: 2em;
+    
 }
 
-button.contactknop {
+.contactknop {
     border: 1px solid var(--textColor);
     padding: 2em;
     font-size: var(--textSize);
-  }
+    margin: 2em;
+    
+}
 
-  button.contactknop:hover {
+.contactknop:hover {
     background-color: var(--mainColor);
     color: var(--secundaryColor);
     transition: 1s;
-  }
+}
 
-  .slide1 {
-    animation: arrow1 1s ease-in-out infinite;
-    margin-left: 9px;
-  }
-
-  @keyframes arrow1 {
-    0%,
-    100% {
-      transform: translate(0, 0);
-    }
-
-    50% {
-      transform: translate(10px, 0);
-    }
-  }
 
 
 .howWeDoTextContainer::before {
@@ -409,7 +397,7 @@ img {
     cursor: pointer;
     width: 10%;
     z-index: 2;
-    
+
 }
 
 
@@ -489,17 +477,17 @@ img {
 
 .progressBarContentBlock h2 {
     font-size: 2em;
-    
+
 }
 
 .progressBarContentBlock p {
     font-size: 3em;
-   
+
 }
 
 .progressBarContentBlock button {
     font-size: 2.5em;
-    
+
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -673,7 +661,7 @@ form button:hover {
         margin-left: 6em;
     }
 
-  .vanMeeuwenImg {
+    .vanMeeuwenImg {
         width: 30%;
         padding-left: 5em;
     }
@@ -890,8 +878,5 @@ form button:hover {
     .customerReviewsContentContainer {
         margin-left: 40rem;
     }
-
-    
-
 
 }
