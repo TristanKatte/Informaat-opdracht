@@ -1,4 +1,4 @@
-# 🛬 Informaat Landingspagina
+# Informaat Landingspagina
 
 
 Deze Readme geeft een overzicht van het Informaat Landingspagina Project, waarvan ik mijn versie heb uitgevoerd voor Informaat, een ontwerpbureau gespecialiseerd in het bouwen van websites.
