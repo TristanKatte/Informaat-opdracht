@@ -161,6 +161,34 @@ img {
     margin-left: 2em;
 }
 
+button.contactknop {
+    border: 1px solid var(--textColor);
+    padding: 2em;
+    font-size: var(--textSize);
+  }
+
+  button.contactknop:hover {
+    background-color: var(--mainColor);
+    color: var(--secundaryColor);
+    transition: 1s;
+  }
+
+  .slide1 {
+    animation: arrow1 1s ease-in-out infinite;
+    margin-left: 9px;
+  }
+
+  @keyframes arrow1 {
+    0%,
+    100% {
+      transform: translate(0, 0);
+    }
+
+    50% {
+      transform: translate(10px, 0);
+    }
+  }
+
 
 .howWeDoTextContainer::before {
     content: '';
