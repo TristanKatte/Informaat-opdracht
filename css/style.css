@@ -20,182 +20,193 @@
 
 
 
-    * {
-        font-family: var(--textFont);
-    }
+* {
+    font-family: var(--textFont);
+}
 
-    body {
+body {
 
-            margin: 0;
-            padding: 0;
-            width: 100vw;
-            height: 100vh;
-            overflow-x: hidden; /* Om horizontaal scrollen te voorkomen */
-    }
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+    /* Om horizontaal scrollen te voorkomen */
+}
 
-    main {
-        max-width: 100%;
-    }
-    /*text properties*/
-    h1 h2 h3 p {
-        font-family: var(--textFont);
-        max-width: 60ch;
-    }
+main {
+    max-width: 100%;
+}
 
-    h1, h2, h3 {
-        line-height: 1.2; /* of line-height: 1.2em; */
-        letter-spacing: 0.05em;
-        font-weight: bold;
-    }
+/*text properties*/
+h1 h2 h3 p {
+    font-family: var(--textFont);
+    max-width: 60ch;
+}
 
-    h1 {
-        font-size: var(--headTitleSize);;
-    }
+h1,
+h2,
+h3 {
+    line-height: 1.2;
+    /* of line-height: 1.2em; */
+    letter-spacing: 0.05em;
+    font-weight: bold;
+}
 
-    h2 {
-        font-size: var(--titleSize);
+h1 {
+    font-size: var(--headTitleSize);
+    ;
+}
 
-    }
+h2 {
+    font-size: var(--titleSize);
 
-    h3 {
-        font-size: var(--subTitleSize);
+}
 
-    }
+h3 {
+    font-size: var(--subTitleSize);
 
-    p {
-        font-size: var(--textSize);
-        line-height: 1.5; /* of line-height: 1.5em; */
-        letter-spacing: 0.02em;
-    }
+}
 
-    /*components (like buttons and li)*/
-    ul {
-        margin: 0.75em 0;
-        padding: 0 1em;
-        list-style: none;
-    }
+p {
+    font-size: var(--textSize);
+    line-height: 1.5;
+    /* of line-height: 1.5em; */
+    letter-spacing: 0.02em;
+}
 
-    .listItems::before {
-        content: "";
-        border-color: transparent #111;
-        border-style: solid;
-        border-width: 1em 0 1em 1em;
-        display: block;
-        height: 0;
-        width: 0;
-        left: -2em;
-        top: 2.5em;
-        position: relative;
-    }
+/*components (like buttons and li)*/
+ul {
+    margin: 0.75em 0;
+    padding: 0 1em;
+    list-style: none;
+}
 
-    button {
-        background-color: var(--secundaryColor);
-        border: solid 1px black;
-        padding: 1em;
-    }
+.listItems::before {
+    content: "";
+    border-color: transparent #111;
+    border-style: solid;
+    border-width: 1em 0 1em 1em;
+    display: block;
+    height: 0;
+    width: 0;
+    left: -2em;
+    top: 2.5em;
+    position: relative;
+}
 
-    a {
-        text-decoration: none;
-        color: var(--textColor);
-        font-weight: bold;
-    }
+button {
+    background-color: var(--secundaryColor);
+    border: solid 1px black;
+    padding: 1em;
+}
 
-    a:visited {
-        color: var(--textColor);
-    }
+a {
+    text-decoration: none;
+    color: var(--textColor);
+    font-weight: bold;
+}
 
-    /*wraps the page*/
-    .pageWrapper {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        background-color: var(--mainColor);
+a:visited {
+    color: var(--textColor);
+}
 
-    }
+/*wraps the page*/
+.pageWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--mainColor);
 
-    /*image settings*/
-    header img {
-        width: 100%;
-    }
+}
 
-    img {
-        max-width: 100%;
-    }
+/*image settings*/
+header img {
+    width: 100%;
+}
 
-    .howDoWeDo img{
-        max-width: 77%;
-    }
+img {
+    max-width: 100%;
+}
 
-    /*first block*/
-    /*how do we do properties*/
-    .howDoWeDo {
-        display: flex;
-        flex-direction: column;
+.howDoWeDo img {
+    max-width: 77%;
+}
 
-    }
+/*first block*/
+/*how do we do properties*/
+.howDoWeDo {
+    display: flex;
+    flex-direction: column;
+
+}
+
 .howDoWeDoEmpty {
     display: none;
 }
 
 
-    .howWeDoTextContainer {
-        background-color: var(--secundaryColor);
-        max-width: 90%;
-        margin-left: auto;
-        position: relative;
-    }
+.howWeDoTextContainer {
+    background-color: var(--secundaryColor);
+    max-width: 90%;
+    margin-left: auto;
+    position: relative;
+}
 
-    .howDoWeDo h2 {
-        margin-left: 0.5em;
-    }
+.howDoWeDo h2 {
+    margin-left: 0.5em;
+}
 
-    .howDoWeDo li {
-        margin-left: 2em;
-    }
-
-
-    .howWeDoTextContainer::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: -6em; /* Pas de afstand van de afschuining aan in em */
-        width: 0;
-        height: 0;
-        border-style: solid;
-        border-width: 0 6em 47em 0; /* Pas de grootte van de afschuining aan in em */
-        border-color: transparent var(--secundaryColor) transparent transparent;
-    }
-
-    /*second block*/
-    /**/
-    .customerReviews {
-        background-color: var(--tertairyColor);
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+.howDoWeDo li {
+    margin-left: 2em;
+}
 
 
-    }
+.howWeDoTextContainer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -6em;
+    /* Pas de afstand van de afschuining aan in em */
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 6em 47em 0;
+    /* Pas de grootte van de afschuining aan in em */
+    border-color: transparent var(--secundaryColor) transparent transparent;
+}
 
-    .customerReviewsContentContainer {
-        display: flex;
-        flex-direction: column;
-        justify-content: center; /* Voeg deze regel toe om de inhoud in het midden te centreren */
-        margin: var(--margin);
-    }
+/*second block*/
+/**/
+.customerReviews {
+    background-color: var(--tertairyColor);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
-    .customerReviewsImageContainer {
-        text-align: center;
-        margin-top: 20px;
-    }
 
-    .customerReviewsImageContainer img {
-        max-width: 100%;
-        height: auto;
-        width: 80%;
-    }
+}
 
-    /*third block*/
+.customerReviewsContentContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* Voeg deze regel toe om de inhoud in het midden te centreren */
+    margin: var(--margin);
+}
+
+.customerReviewsImageContainer {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.customerReviewsImageContainer img {
+    max-width: 100%;
+    height: auto;
+    width: 80%;
+}
+
+/*third block*/
 
 .askUs {
     display: flex;
@@ -203,17 +214,17 @@
     justify-content: center;
 }
 
-    .askUsImgContainer {
-       margin: 6rem;
-        display: none;
-    }
+.askUsImgContainer {
+    margin: 6rem;
+    display: none;
+}
 
-    .askUsTextContainer {
-        display: flex;
-        flex-direction: column;
-        margin: 3rem;
+.askUsTextContainer {
+    display: flex;
+    flex-direction: column;
+    margin: 3rem;
 
-    }
+}
 
 .askUsTextContainer img {
     width: 15%;
@@ -221,50 +232,52 @@
     display: none;
 }
 
-    .askUsTextContainer ul {
-        margin-left: 1rem;
-    }
+.askUsTextContainer ul {
+    margin-left: 1rem;
+}
 
-    /*fourth block*/
-    .whatDoYouGet {
-        display: flex;
-        flex-direction: column;
-    }
+/*fourth block*/
+.whatDoYouGet {
+    display: flex;
+    flex-direction: column;
+}
 
-    .whatDoYouGetTextContainer :is(h2) {
-        margin-left: 0.5em;
-    }
+.whatDoYouGetTextContainer :is(h2) {
+    margin-left: 0.5em;
+}
 
-    .whatDoYouGetTextContainer :is(li) {
-        margin-left: 2em;
-    }
+.whatDoYouGetTextContainer :is(li) {
+    margin-left: 2em;
+}
 
-    .whatDoYouGetTextContainer {
-        background-color: var(--secundaryColor);
-        width: 90%;
-        margin-left: auto;
-        position: relative;
-    }
+.whatDoYouGetTextContainer {
+    background-color: var(--secundaryColor);
+    width: 90%;
+    margin-left: auto;
+    position: relative;
+}
 
-    .whatDoYouGetTextContainer::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: -6em; /* Pas de afstand van de afschuining aan in em */
-        width: 0;
-        height: 0;
-        border-style: solid;
-        border-width: 0 6.2em 60em 0; /* Pas de grootte van de afschuining aan in em */
-        border-color: transparent var(--secundaryColor) transparent transparent;
-    }
+.whatDoYouGetTextContainer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -6em;
+    /* Pas de afstand van de afschuining aan in em */
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 6.2em 60em 0;
+    /* Pas de grootte van de afschuining aan in em */
+    border-color: transparent var(--secundaryColor) transparent transparent;
+}
 
-    .ourApproach {
-        background-color: var(--tertairyColor);
-        display: flex;
-        flex-direction: column;
-        text-align: center;
+.ourApproach {
+    background-color: var(--tertairyColor);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
 
-    }
+}
 
 .ourApproach .list {
     display: flex;
@@ -277,313 +290,280 @@
     text-align: center;
 }
 
-    .ourApproachContentBlocks img{
-        max-height: 400px;
-    }
+.ourApproachContentBlocks img {
+    max-height: 400px;
+}
 
-    .ourApproachContentContainer h2,
-    .ourApproachContentContainer p {
-        font-size: var(--titleSize);
-    }
+.ourApproachContentContainer h2,
+.ourApproachContentContainer p {
+    font-size: var(--titleSize);
+}
 
-    .ourApproachContentContainer h3 {
-        font-size: var(--subTitleSize);
-    }
+.ourApproachContentContainer h3 {
+    font-size: var(--subTitleSize);
+}
 
-    .ourApproachContentBlocks {
-        text-align: center;
-        margin: 4em;
-        display: flex;
-        flex-direction: column;
+.ourApproachContentBlocks {
+    text-align: center;
+    margin: 4em;
+    display: flex;
+    flex-direction: column;
 
-    }
-
-    /*fith block*/
-    /*title slider*/
-    .exampleProject {
-        background-color: var(--secundaryColor);
-    }
-
-    .sliderTitleContainer {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-        margin: 0 2em 0 2em;
-    }
-
-    .sliderTitle p {
-        font-size: 1em;
-        margin: 1em 0 0 0.5em;
-        font-family: 'Gilroy-Light', sans-serif
-    }
-
-    .sliderTitle h2 {
-        font-size: 1em;
-        margin: 0 0 0.5em 0.3em;
-    }
-
-    .exampleProjectImgContainer {
-        display: none;
-        max-width: 100%;
-    }
-
-    .sliderTitleContainer img {
-        max-width: 100%;
+}
 
 
-    }
+.exampleProject {
+    background-color: var(--secundaryColor);
+}
+
+.sliderTitleContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 2em 0 2em;
+}
+
+.sliderTitle p {
+    font-size: 1em;
+    margin: 1em 0 0 0.5em;
+    font-family: 'Gilroy-Light', sans-serif
+}
+
+.sliderTitle h2 {
+    font-size: 1em;
+    margin: 0 0 0.5em 0.3em;
+}
+
+.exampleProjectImgContainer {
+    display: none;
+    max-width: 100%;
+}
+
+.sliderTitleContainer img {
+    max-width: 100%;
 
 
-    /*slider*/
-    .slider-container {
-        position: relative;
-        width: 100%;
-        overflow: hidden;
-
-        height: 10em;
-    }
-
-    .slider {
-        display: flex;
-        transition: transform 0.5s ease-in-out;
-
-    }
-
-    .slide {
-        min-width: 100%;
-    }
-
-    img {
-        width: 100%;
-    }
-
-    .prev, .next {
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        font-size: 18px;
-        background: none;
-        border: none;
-        cursor: pointer;
-        width: 10%;
-        z-index: 2; /* Ensure buttons appear above the slides */
-    }
+}
 
 
-    .prev {
-        left: 10px;
-        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
-    }
+/*slider*/
+.slider-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+
+    height: 10em;
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+
+}
+
+.slide {
+    min-width: 100%;
+}
+
+img {
+    width: 100%;
+}
+
+.prev,
+.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 18px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    width: 10%;
+    z-index: 2;
+    
+}
 
 
-    .next {
-        right: 10px;
-        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
-    }
-
-    .exampleProject article {
-        margin: 2em 4em 0 4em;
-    }
-
-    .exampleProject li {
-        margin: 2em;
-    }
-
-    /*How we start*/
-    /*progress function*/
-    .howWeStart {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-background-color: var(--tertairyColor);
-    }
-
-    .progressBar {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        width: 100%;
-        position: relative;
-
-    }
+.prev {
+    left: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
 
 
+.next {
+    right: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
 
-    #progressBar1, #progressBar2, #progressBar3 {
-        margin: 1.8em 0;
-        height: 50%;
-        width: 7.5%;
-    }
+.exampleProject article {
+    margin: 2em 4em 0 4em;
+}
 
-    #progressBar1 {
-        background-color: var(--textColor);
-        color: var(--secundaryColor);
-    }
+.exampleProject li {
+    margin: 2em;
+}
 
-    .progressBar button {
-        padding: 1em;
-        border-radius: 50%;
-        font-size: var(--titleSize);
-        font-weight: bold;
-        border: none;
-    }
+.howWeStart {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--tertairyColor);
+}
 
+.progressBar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    position: relative;
 
-    /*.line::before {*/
-    /*    content: "";*/
-    /*    flex-grow: 1; !* Laat de lijn de resterende ruimte vullen *!*/
-    /*    height: 1px;*/
-    /*    background-color: var(--secundaryColor);*/
-    /*    display: block;*/
-    /*    margin-top: 10px; !* Voeg een marge toe onder de lijn *!*/
-    /*}*/
-    .line {
-        background-color: var(--secundaryColor);
-        width: 5%;
-        height: 7px;
-        border: 0 none;
-        margin: 5em 0;
-    }
+}
 
-    .lineActive {
-        background-color: var(--textColor);
-        color: var(--secundaryColor);
-    }
+.progressBar button {
+    padding: 1em;
+    border-radius: 50%;
+    font-size: var(--titleSize);
+    font-weight: bold;
+    border: none;
+}
 
-    .howWeStart figure {
-        background-color: var(--secundaryColor);
+.howWeStart figure {
+    background-color: var(--secundaryColor);
 
 
-    }
+}
 
-    .progressBarBlocks {
-        display: flex;
-        flex-direction: row;
-        max-width: 100%;
-    }
+.progressBarBlocks {
+    display: flex;
+    flex-direction: row;
+    max-width: 100%;
+}
 
-    .progressBarContentBlock {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        margin: 0.5em;
-        max-width: 30%;
-    }
+.progressBarContentBlock {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0.5em;
+    max-width: 30%;
+}
 
-    .howWeStartImg {
-        max-width: 50%;
-    }
+.howWeStartImg {
+    max-width: 50%;
+}
 
-    .progressBarButtonImg {
-        width: 20%;
-        margin-top: 0.2em;
-    }
+.progressBarButtonImg {
+    width: 20%;
+    margin-top: 0.2em;
+}
 
-    .progressBarContentBlock h2 {
-        font-size: 2em; /* Pas de gewenste grootte aan */
-    }
+.progressBarContentBlock h2 {
+    font-size: 2em;
+    
+}
 
-    .progressBarContentBlock p {
-        font-size: 3em; /* Pas de gewenste grootte aan */
-    }
+.progressBarContentBlock p {
+    font-size: 3em;
+   
+}
 
-    .progressBarContentBlock button {
-        font-size: 2.5em; /* Pas de gewenste grootte aan */
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        width: 35%;
-    }
+.progressBarContentBlock button {
+    font-size: 2.5em;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 35%;
+}
 
 .howWeStartImgContainer {
     display: none;
 }
 
-    .howWeStartText {
-        margin: 0 4em 4em 4em;
-    }
+.howWeStartText {
+    margin: 0 4em 4em 4em;
+}
 
-    .howWeStartText li {
-        margin-left: -1em;
-    }
-
-
-    .talk {
-        background-color: var(--secundaryColor);
-        display: flex;
-        flex-direction: column;
-        padding: 2em 8em;
-        text-align: left;
-    }
-
-    .talk li {
-        margin: 1em 1em 1em -1em;
-    }
-
-    .talkLinkedin img {
-        width: 6%
-
-    }
-
-    .talkLinkedin {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .contact {
-        background-color: var(--secundaryColor);
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        padding: 4em;
-
-    }
-
-    form {
-        display: flex;
-        flex-direction: column;
-        font-size: 2.5em;
+.howWeStartText li {
+    margin-left: -1em;
+}
 
 
-    }
+.talk {
+    background-color: var(--secundaryColor);
+    display: flex;
+    flex-direction: column;
+    padding: 2em 8em;
+    text-align: left;
+}
 
-    input, textarea {
-        margin: 0.7em 0 0.7em 0;
-        font-size: 1em;
-        background-color: var(--tertairyColor);
-        border: none;
-        color: var(--textColor);
-    }
+.talk li {
+    margin: 1em 1em 1em -1em;
+}
 
-    input[type="checkbox"] {
-        width: 0.8em;
-        height: 0.8em;
-        background-color: var(--tertairyColor);
-    }
+.talkLinkedin img {
+    width: 6%
+}
 
-    form button {
-        font-size: 1em;
-        margin-top: 1.5em;
-    }
+.talkLinkedin {
+    display: flex;
+    flex-direction: column;
+}
 
-    form button:hover {
-        background-color: var(--tertairyColor);
-    }
+.contact {
+    background-color: var(--secundaryColor);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 4em;
+
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    font-size: 2.5em;
+
+
+}
+
+input,
+textarea {
+    margin: 0.7em 0 0.7em 0;
+    font-size: 1em;
+    background-color: var(--tertairyColor);
+    border: none;
+    color: var(--textColor);
+}
+
+input[type="checkbox"] {
+    width: 0.8em;
+    height: 0.8em;
+    background-color: var(--tertairyColor);
+}
+
+form button {
+    font-size: 1em;
+    margin-top: 1.5em;
+}
+
+form button:hover {
+    background-color: var(--tertairyColor);
+}
 
 /*responsive*/
-@media (min-width: 900px)  {
+@media (min-width: 900px) {
     .whatDoYouGetTextContainer::before {
         content: '';
         position: absolute;
         top: 0;
-        left: -6em; /* Pas de afstand van de afschuining aan in em */
+        left: -6em;
         width: 0;
         height: 0;
         border-style: solid;
-        border-width: 0 6.2em 33em 0; /* Pas de grootte van de afschuining aan in em */
+        border-width: 0 6.2em 33em 0;
         border-color: transparent var(--secundaryColor) transparent transparent;
     }
 
@@ -618,14 +598,14 @@ background-color: var(--tertairyColor);
 
 }
 
-@media (min-width: 1400px)  {
+@media (min-width: 1400px) {
 
-    .customerReviewsContentContainer{
+    .customerReviewsContentContainer {
         margin-left: 0;
         margin-right: 22rem;
     }
 
-    .customerReviewsContentContainer img{
+    .customerReviewsContentContainer img {
         margin-left: 0;
         margin-right: 22rem;
         width: 35%;
@@ -644,30 +624,84 @@ background-color: var(--tertairyColor);
         display: block;
     }
 
-/*example projects*/
+    /*example projects*/
 
 
-    .exampleProjectText{
+    .exampleProjectText {
         display: flex;
         flex-direction: row;
-        margin-left: 35rem ;
-        margin-right: 45rem ;
+        margin-left: 35rem;
+        margin-right: 45rem;
 
     }
 
     .sliderTitleContainer {
-    justify-content: center;
+        justify-content: center;
 
-}
+    }
 
     .sliderTitle {
         margin-right: 11em;
         margin-left: 6em;
     }
 
-    .vanMeeuwenImg {
-        max-width: 7%;
+  .vanMeeuwenImg {
+        width: 30%;
         padding-left: 5em;
+    }
+
+    .mySlides {
+        display: none;
+    }
+
+    img {
+        vertical-align: middle;
+    }
+
+    /* Slideshow container */
+    .slideshow-container {
+        max-width: 1000px;
+        position: relative;
+        margin: auto;
+    }
+
+    /* Number text (1/3 etc) */
+    .numbertext {
+        color: #f2f2f2;
+        font-size: 12px;
+        padding: 8px 12px;
+        position: absolute;
+        top: 0;
+    }
+
+    .dot {
+        height: 15px;
+        width: 15px;
+        margin: 0 2px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+    }
+
+    .active {
+        background-color: #717171;
+    }
+
+
+    .fade {
+        animation-name: fade;
+        animation-duration: 1.5s;
+    }
+
+    @keyframes fade {
+        from {
+            opacity: .4
+        }
+
+        to {
+            opacity: 1
+        }
     }
 
     .exampleProjectImgContainer {
@@ -677,25 +711,26 @@ background-color: var(--tertairyColor);
     }
 
     .exampleProjectImgContainer img {
-        width: 30%;
+        width: 33.3%;
 
     }
 
     #bigImg {
-    width: 60%;
-}
+        width: 60%;
+    }
 
     .slider-container {
         display: none;
     }
 
-/*how we start / progressbar*/
+    /*how we start / progressbar*/
     .howWeStartContainer {
         background-color: var(--secundaryColor);
         padding: 1rem;
         width: 100%;
         height: 100%;
     }
+
     .progressBar {
         display: none;
     }
@@ -709,13 +744,14 @@ background-color: var(--tertairyColor);
         margin-right: 15rem;
         padding: 15rem;
     }
+
     .howWeStartImgContainer {
-    display: flex;
+        display: flex;
         flex-direction: row;
     }
 
     .howWeStartImgContainer img {
-    width: 100%;
+        width: 100%;
     }
 
     .howeStartContentBlock {
@@ -729,7 +765,7 @@ background-color: var(--tertairyColor);
 
 
 
-/*talk and form*/
+    /*talk and form*/
     .talkAndContactContainer {
         display: flex;
         flex-direction: row-reverse;
@@ -747,7 +783,7 @@ background-color: var(--tertairyColor);
         width: 1%;
     }
 
-    .talk img{
+    .talk img {
         width: 40%;
     }
 
@@ -759,6 +795,7 @@ background-color: var(--tertairyColor);
 
 
 }
+
 @media (min-width: 1200px) {
     .howDoWeDo {
         flex-direction: row-reverse;
@@ -825,6 +862,8 @@ background-color: var(--tertairyColor);
     .customerReviewsContentContainer {
         margin-left: 40rem;
     }
+
+    
 
 
 }
