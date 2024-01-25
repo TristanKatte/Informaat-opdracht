@@ -83,7 +83,7 @@ ul {
 }
 
 .listItems::before {
-    content: "";
+    content: "▶";
     border-color: transparent #111;
     border-style: solid;
     border-width: .5em 0 .5em .5em;
