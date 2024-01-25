@@ -82,6 +82,11 @@ ul {
     list-style: none;
 }
 
+ul li::marker {
+    content: "▶";
+}
+    
+
 .listItems::before {
     content: "▶";
     border-color: transparent #111;
