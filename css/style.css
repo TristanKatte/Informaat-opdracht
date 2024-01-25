@@ -747,14 +747,6 @@ form button:hover {
         height: 100%;
     }
 
-    .progressBar {
-        display: none;
-    }
-
-    .progressBarContentBlock {
-        display: none;
-    }
-
     .howWeStart {
         margin-left: 15rem;
         margin-right: 15rem;
