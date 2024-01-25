@@ -86,7 +86,7 @@ ul {
     content: "";
     border-color: transparent #111;
     border-style: solid;
-    border-width: 1em 0 1em 1em;
+    border-width: .5em 0 .5em .5em;
     display: block;
     height: 0;
     width: 0;
