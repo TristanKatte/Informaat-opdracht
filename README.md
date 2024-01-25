@@ -27,9 +27,9 @@ Dit project is gemaakt met HTML, CSS en JavaScript. Verder staat hieronder een k
 
 **Gebruikte technieken**
 
-- 📟 HTML
-- ⌚ CSS
-- 📲 JavaScript
+-  HTML
+-  CSS
+-  JavaScript
 
 **Gebruikte links** 
 - https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_slideshow_auto
@@ -60,7 +60,7 @@ Om de pagina mobile te krijgen heb ik het volgende gedaan:
 ### Tablet view
 Voor de tablet view heb ik de mobile view gebruikt alleen die een stuk wijder gemaakt en de spacings vergroot.
 
-## 🖱️ Gebruik
+##  Gebruik
 **Algemeen:**
 
 Doormiddel van scrollen kun je allemaal informatie over informaat vinden.
