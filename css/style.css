@@ -156,7 +156,7 @@ img {
     max-width: 90%;
     margin-left: auto;
     position: relative;
-    z-index: -1;
+    
 }
 
 .howDoWeDo h2 {
@@ -196,6 +196,7 @@ img {
     border-width: 0 6em 47em 0;
     /* Pas de grootte van de afschuining aan in em */
     border-color: transparent var(--secundaryColor) transparent transparent;
+    z-index: -1;
 }
 
 /*second block*/
