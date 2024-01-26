@@ -87,7 +87,7 @@ ul li::marker {
 }
     
 
-.listItems::before {
+/*.listItems::before {
     content: "";
     border-color: transparent #111;
     border-style: solid;
@@ -98,7 +98,7 @@ ul li::marker {
     left: -2em;
     top: 2.5em;
     position: relative;
-}
+}*/
 
 button {
     background-color: var(--secundaryColor);
