@@ -196,7 +196,7 @@ img {
     border-width: 0 6em 47em 0;
     /* Pas de grootte van de afschuining aan in em */
     border-color: transparent var(--secundaryColor) transparent transparent;
-    z-index: -1;
+    
 }
 
 /*second block*/
@@ -216,7 +216,7 @@ img {
     justify-content: center;
     /* Voeg deze regel toe om de inhoud in het midden te centreren */
     margin: var(--margin);
-    z-index: 1;
+    
 }
 
 .customerReviewsImageContainer {
